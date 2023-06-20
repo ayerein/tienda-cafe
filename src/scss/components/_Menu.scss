@@ -1,0 +1,57 @@
+/* MENU */
+
+@import './Var';
+
+.container-menu{
+    margin: 0 3vw 7vh 3vw;
+    .menu-title{
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include font;
+        font-weight: 800;
+    }
+    .menu-products{
+        .container-categories{
+            .categories-title{
+                @include font;
+                font-weight: 600;
+                font-size: 1.2rem;
+                height: 10vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border-top: 1px solid #999;
+                border-bottom: 1px solid #999;
+            }
+            .grid-products{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                a{
+                    text-decoration: none;
+                    .product{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 5vh 3vw;
+                        img{
+                            background-color: $color;
+                            border-radius: 50%;
+                            &:hover{
+                                box-shadow: inset 0 0 0 13px rgb(146, 72, 23);
+                            }
+                        }
+                        p{
+    
+                            @include font;
+                            font-weight: 600;
+                            padding-top: 4vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

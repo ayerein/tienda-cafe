@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAV */
+header {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+header .container-nav {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 3vw;
+}
+header .container-nav .nav {
+  display: flex;
+  margin-right: 25vw;
+}
+header .container-nav .nav .nav-a {
+  margin: 0 1.5vw;
+  text-decoration: none;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  padding: 2vh 0;
+}
+header .container-nav .nav .nav-a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: rgb(102, 51, 16);
+  transition: left 0.8s;
+}
+header .container-nav .nav .nav-a:hover:after {
+  left: 0;
+}
+header .container-nav .nav .nav-a:hover {
+  color: rgb(102, 51, 16);
+}
+header .container-nav .search a {
+  text-decoration: none;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+header .container-nav .search a:hover {
+  color: rgb(102, 51, 16);
+}
+
+/* HOME */
+.home {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  background-color: rgb(219, 219, 68);
+}
+.home img {
+  height: 65%;
+  width: 50vw;
+}
+.home .description {
+  width: 50vw;
+  padding: 0 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.home .description h2 {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 3rem;
+}
+.home .description p {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 1rem;
+  padding: 4vh 0;
+}
+
+/* MENU */
+.container-menu {
+  margin: 0 3vw 7vh 3vw;
+}
+.container-menu .menu-title {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+.container-menu .menu-products .container-categories .categories-title {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+.container-menu .menu-products .container-categories .grid-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.container-menu .menu-products .container-categories .grid-products a {
+  text-decoration: none;
+}
+.container-menu .menu-products .container-categories .grid-products a .product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5vh 3vw;
+}
+.container-menu .menu-products .container-categories .grid-products a .product img {
+  background-color: rgb(102, 51, 16);
+  border-radius: 50%;
+}
+.container-menu .menu-products .container-categories .grid-products a .product img:hover {
+  box-shadow: inset 0 0 0 13px rgb(146, 72, 23);
+}
+.container-menu .menu-products .container-categories .grid-products a .product p {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  padding-top: 4vh;
+}
+
+/* FOOTER */
+.container-footer {
+  box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.1);
+}
+.container-footer .container-about {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 7vh 0 3vh 0;
+}
+.container-footer .container-about .about .about-title {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+.container-footer .container-about .about ul li {
+  list-style: none;
+  padding: 2vh 0;
+}
+.container-footer .container-about .about ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgb(90, 90, 90);
+}
+.container-footer .container-about .about ul li a:hover {
+  color: black;
+}
+.container-footer .container-links {
+  display: flex;
+  justify-content: center;
+}
+.container-footer .container-links img {
+  margin: 0 2vw;
+  height: 340x;
+}
+.container-footer .container-copyright {
+  text-align: center;
+  margin: 1vh 0;
+}/*# sourceMappingURL=App.css.map */

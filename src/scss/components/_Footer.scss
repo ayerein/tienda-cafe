@@ -1,0 +1,46 @@
+/* FOOTER */
+
+@import './Var';
+
+.container-footer{
+    box-shadow: 0 -3px 3px rgba(0,0,0,.1);
+    .container-about{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 7vh 0 3vh 0;
+        .about{
+            .about-title{
+                @include font;
+                font-weight: 600;
+            }
+            ul{
+                li{
+                    list-style: none;
+                    padding: 2vh 0;
+                    a{
+                        text-decoration: none;
+                        @include font;
+                        font-size: .9rem;
+                        font-weight: 600;
+                        color: rgb(90, 90, 90);
+                        &:hover{
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .container-links{
+        display: flex;
+        justify-content: center;
+        img{
+            margin: 0 2vw;
+            height: 340x;
+        }
+    }
+    .container-copyright{
+        text-align: center;
+        margin: 1vh 0;
+    }
+}
